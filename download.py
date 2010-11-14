@@ -8,6 +8,11 @@ import os
 USER_AGENT = 'Mozilla/5.0 (X11; U; Linux x86_64; ru; rv:1.9.2.12)'
 TIMEOUT = 120
 
+if len(sys.argv) < 2:
+  print 'Usage: %s <springerlink_id>' % (sys.argv[0])
+  sys.exit(1)
+
+
 def fetch(*args):
   print '/'.join(args)
   while True:

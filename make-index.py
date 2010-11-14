@@ -2,6 +2,12 @@
 
 import os, sys, re
 
+
+if len(sys.argv) < 2:
+  print 'Usage: %s <path_to_journal>' % (sys.argv[0])
+  sys.exit(1)
+
+
 def sort_files(a,b):
   find_vol = lambda a: re.findall(r'/(\d+)(?:-\d+)?/(\d+)(?:-\d+)?/', a)[0]
   (vol_a, num_a) = find_vol(a)

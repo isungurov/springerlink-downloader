@@ -1,0 +1,5 @@
+Set of scripts which allows to download whole journals issues from SpringerLink
+
+download.py -- script to download SpringerLink journal by its id (http://www.springerlink.com/content/<springerlink_id>)
+make-index.py -- generates HTML index file for fetched with previous script journal
+make-all-index.sh -- generates HTML indexes for all journals in current directory
